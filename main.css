@@ -1,0 +1,148 @@
+body {
+    max-width: 1024px;
+    margin: auto;
+    background-color: #29292A
+}
+  .nav {
+    grid-area: nav;
+    max-width: 1024px;
+    margin: auto;  
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+    "nav"
+    ;
+}
+  .sidebar {
+          grid-area: sidebar;
+      }
+  
+      .sidebar2 {
+          grid-area: sidebar2;
+      }
+  
+      .content {
+          grid-area: content;
+          width: 50%;
+      }
+  
+      .header {
+          grid-area: header;
+      }
+  
+      .footer {
+          grid-area: footer;
+      }
+  
+      .wrapper {
+          color: #fff;
+      }
+  
+    .wrapper {
+      max-width: 1024px;
+      margin: auto;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-areas:
+       "header"
+       "sidebar"
+       "content"
+       "sidebar2"
+       "footer"
+    }
+  
+      @media only screen and (min-width: 500px)  {
+      .wrapper {
+        padding:10px;
+          grid-template-columns: 20% auto;
+          grid-template-areas:
+      "header   header"
+          "sidebar  content"
+          "sidebar2 sidebar2"
+          "footer   footer";
+      }
+      .nav {
+        grid-gap: 20px;
+              grid-template-columns: 40% 20% 40%;
+              grid-template-areas:
+                "nav";
+          }
+      }
+  
+      @media only screen and (min-width: 600px)   {
+          .wrapper {
+              padding:10px;
+        grid-gap: 20px;
+              grid-template-columns: 120px auto 120px;
+              grid-template-areas:
+        "header  header  header"
+              "sidebar content sidebar2"
+              "footer  footer  footer";
+              max-width: 600px;
+          }
+          .nav {
+            grid-gap: 20px;
+                  grid-template-columns: 120px auto 120px;
+                  grid-template-areas:
+                    "nav  nav  nav";
+                  max-width: 600px;
+              }
+      }
+  .nav {
+    padding:10px;
+          }
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%; 
+  }
+  
+  header{
+    padding:0px;
+    background-color:#232323;
+  }
+  .footer {
+    background-color: #999;
+  }
+  
+  .sidebar2 {
+    background-color: #ccc;
+    color: #444;
+  }
+  .burgermenu{
+      width:42px;
+      order:3;
+  }
+  .project1{
+      width:200%;
+  }
+
+  /* typography */
+
+
+  h1{
+      font-size: 36px;
+      font-weight: 700px;
+      color: #1de9b6;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  }
+  h2{
+    font-size: 30px;
+    font-weight: 600px;
+    color: #1de9b6;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 26px;
+    font-weight: 500px;
+    color: #1de9b6;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 14px;
+    font-weight: 400px;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
