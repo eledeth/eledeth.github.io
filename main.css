@@ -61,12 +61,14 @@ body {
           "sidebar  content"
           "sidebar2 sidebar2"
           "footer   footer";
+          max-width: 600px;
       }
       .nav {
         grid-gap: 20px;
               grid-template-columns: 40% 20% 40%;
               grid-template-areas:
                 "nav";
+                max-width: 600px;
           }
       }
   
@@ -74,19 +76,19 @@ body {
           .wrapper {
               padding:10px;
         grid-gap: 20px;
-              grid-template-columns: 120px auto 120px;
+              grid-template-columns: 30% auto 30%;
               grid-template-areas:
         "header  header  header"
               "sidebar content sidebar2"
               "footer  footer  footer";
-              max-width: 600px;
+              max-width: 1024px;
           }
           .nav {
             grid-gap: 20px;
-                  grid-template-columns: 120px auto 120px;
-                  grid-template-areas:
+                grid-template-columns: 30% auto 30%;
+                grid-template-areas:
                     "nav  nav  nav";
-                  max-width: 600px;
+                  max-width: 1024px;
               }
       }
   .nav {
@@ -105,12 +107,19 @@ body {
     background-color:#232323;
   }
   .footer {
-    background-color: #999;
+    display: flex;
+    justify-content: center;
+    justify-self: end;
+    background-color: #232323;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 10px;
   }
   
   .sidebar2 {
-    background-color: #ccc;
-    color: #444;
+    color: #fff;
   }
   .burgermenu{
       width:42px;
