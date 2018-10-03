@@ -1,5 +1,4 @@
 body {
-    max-width: 1024px;
     margin: auto;
     background-color: #29292A
 }
@@ -36,6 +35,8 @@ body {
   
       .wrapper {
           color: #fff;
+          max-width: 1024px;
+
       }
   
     .wrapper {
