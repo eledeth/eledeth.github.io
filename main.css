@@ -4,7 +4,7 @@ body {
 }
   .nav {
     grid-area: nav;
-    max-width: 1024px;
+    max-width: 1366px;
     margin: auto;  
     display: grid;
     grid-gap: 1em;
@@ -35,12 +35,12 @@ body {
   
       .wrapper {
           color: #fff;
-          max-width: 1024px;
+          max-width: 1366px;
 
       }
   
     .wrapper {
-      max-width: 1024px;
+      max-width: 1366px;
       margin: auto;
       display: grid;
       grid-gap: 1em;
